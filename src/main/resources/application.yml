@@ -18,10 +18,11 @@ spring:
                     username: "root"
                     password: "milvus"
                 databaseName: "default"
-                collectionName: "vector-store"
+                collectionName: "vector_store"
                 embeddingDimension: 1536
                 indexType: "IVF_FLAT"
                 metricType: "COSINE"
+                initialize-schema: true
 asb:
     aiapp:
         vectoStorePath: /temp/vectorstore.json
